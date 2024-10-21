@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main() 
+{
+    char alph;
+    cin>>alph;
+    if(alph>=65&& alph<=90
+        cout<<"UC";
+    }
+    else{
+        cout<<"LC";
+    }
+}
