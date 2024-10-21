@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int Physics,Chemistry,Biology,Mathematics,Computer,percentage;
+    char grade;
+    cout << "Enter marks for Physics: ";
+    cin >> Physics;
+    cout << "Enter marks for Chemistry: ";
+    cin >> Chemistry;
+    cout << "Enter marks for Biology: ";
+    cin >> Biology;
+    cout << "Enter marks for Mathematics: ";
+    cin >> Mathematics;
+    cout << "Enter marks for Computer: ";
+    cin >> Computer;
+
+    percentage= (Physics+Chemistry+Biology+Mathematics+Computer)/5;
+    if (percentage >= 90) {
+        grade = 'A';
+    } else if (percentage >= 80) {
+        grade = 'B';
+    } else if (percentage >= 70) {
+        grade = 'C';
+    } else if (percentage >= 60) {
+        grade = 'D';
+    } else if (percentage >= 40) {
+        grade = 'E';
+    } else {
+        grade = 'F';
+    }
+    cout<<grade;
+    
+    
+return 0;
+}
