@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int even,odd;
+
+int main(){
+    int limit;// even,odd =>>0925636,5637278 Garbagge values
+    cout<<limit;
+    cin>>limit;
+
+    for(int i=1;i<=limit;i++){
+        if(i%2==0){
+            even++;
+        }
+        else
+        odd++;
+    }
+    cout<<even<<endl<<odd;
+}
+
+int demo(){
+    even=even+2;
+}
