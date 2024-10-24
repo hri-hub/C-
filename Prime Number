@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main()
-{
+{           //using FOR LOOP
     int num;
     int constr=0;
     cin>>num;
@@ -10,6 +10,29 @@ int main()
        if(num%i==0){
         constr++;       
        }
+    } 
+    
+       if(constr==2)
+       cout<<"prime";
+       else
+       cout<<"not prime";
+}
+
+//USING  WHILE LOOP
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num,i=1;
+    int constr=0;
+    cin>>num;
+    while(i<=num)
+    {
+       if(num%i==0){
+        constr++;
+       }
+       i++;
     } 
     
        if(constr==2)
