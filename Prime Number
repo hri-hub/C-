@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num;
+    int constr=0;
+    cin>>num;
+    for(int i=1;i<=num;i++)
+    {
+       if(num%i==0){
+        constr++;       
+       }
+    } 
+    
+       if(constr==2)
+       cout<<"prime";
+       else
+       cout<<"not prime";
+}
