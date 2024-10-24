@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int even,odd; //=>0;limit=0,even=0
+
+int main(){
+    int limit;// even,odd =>>0925636,5637278
+    cin>>limit;
+                  //10
+    for(int i=0;i<=limit;i++){
+        if(i%2==0){
+            even=even+1;//even++  //4 % 2 = 0
+        }
+        else{
+        odd++;//odd=odd+1//  odd=0+1
+        }
+    cout<<"Even"<<even<<endl<<"Odd"<<odd;
+}
