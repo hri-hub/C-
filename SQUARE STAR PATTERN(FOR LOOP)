@@ -2,8 +2,9 @@
 using namespace std;
 int main()
 {
-    for(int i=0;i<=4;i++){
-        for(int j=0;j<=4;j++){
+    cin>>num;
+    for(int i=0;i<=num;i++){
+        for(int j=0;j<=num;j++){
             cout<<"*";
         }
         cout<<"\n";
@@ -16,10 +17,10 @@ int main()
 using namespace std;
 int main()
 {
-    for(int i=0;i<=4;i++,cout<<"\n"){
+    cin>>num;
+    for(int i=0;i<=num;i++,cout<<"\n"){
         for(int j=0;j<=4;j++){
             cout<<"*";
         }
-        
     }
 }
