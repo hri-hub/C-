@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+// int i; //declare
+// int j=12;// intialization;
+
+int main(){
+    int  arr[]={1,2,3,4,5};
+    //             20  /   4 ;
+    int len=sizeof(arr)/sizeof(arr[0]);
+    cout<<len;
+}
+
+
