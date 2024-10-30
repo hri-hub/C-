@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int n;
+   cin>>n;
+   int arr[n]; // declare arr[n] after getting size ,n from the user to avoid segmentation fault
+   cout<<"size of the array is "<<n<<"\n";
+   for(int i=0;i<n;i++){
+       cin>>arr[i];
+   }
+   cout<<"the elements of the array are"<<"\n";
+   for(int i=0;i<n;i++){
+       cout<<arr[i]<<" ";
+   }
+   //min element of an array
+   int min=arr[0];
+   
+   cout<<"\n";
+   for(int i=1;i<n;i++){
+    if(arr[i]<=min){
+      min=arr[i];
+   }
+   }
+   cout<<"min "<<min;
+   
+   //max element of an array
+   int max=arr[0];
+   
+   cout<<"\n";
+   for(int i=1;i<n;i++){
+    if(arr[i]>=max){
+      max=arr[i];
+   }
+   }
+   cout<<"max "<<max;
+}
