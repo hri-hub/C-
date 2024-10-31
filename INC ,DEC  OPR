@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() 
+{                 //Para Exp Mul Div Add Sub (left to right)
+                  //mostly others are consdiered from right to left like inc dec operators
+    int i=5;      //here (i=5)
+    int x=i--;    //post dec , so in 7th line (i =5) but after 7th line gets executed ie,in 8th line (i=4)
+    int y=--i;    //pre dec, so now as its pre , (i=3).................
+    cout<<x<<endl;
+    cout<<y;
+return 0;
+}
