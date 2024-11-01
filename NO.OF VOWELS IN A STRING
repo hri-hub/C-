@@ -1,0 +1,34 @@
+//Using FOR loop
+
+#include <iostream>
+using namespace std;
+int main() 
+{   
+    int count{};
+    string str;
+    getline(cin,str);
+    for(int i=0;i<str.length();i++){
+        
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){ //str==a isnt valid ,cant compare a char ie,vowel with a string
+        count++; // whenever a,e,i,o,u occurs count increases so give inside if
+        }
+    }
+    cout<<count;
+}
+
+//Using FOR EACH loop
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int count=0;
+    string str;
+    getline(cin,str);
+    for(char c:str){
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){ //str==a isnt valid ,cant compare a char ie,voewel with a string
+        count++; // whenever a,e,i,o,u occurs count increases so give inside if
+        }
+    }
+    cout<<count;
+}
