@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void byvalue(int x,int y)
+{
+    cout << x << " " << y << endl;
+    x++;
+    y++;
+    cout << x << " " << y << endl;
+}
+
+int main()
+{
+    int x = 6;
+    int y = 9;
+    byvalue(x,y);
+    cout<<x<<" "<<y;
+}
