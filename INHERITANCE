@@ -1,0 +1,189 @@
+// Single Inheritance
+
+#include <iostream>
+using namespace std;
+//base class
+class Animal{
+    public:
+        void eat(){
+            cout<<"Animal is Eating";
+        }
+};
+
+//derived class
+class Dog:public Animal{
+    public:
+    void bark(){
+        cout<<"Dog is Barking"<<"\n";
+    }
+};
+
+int main() {
+   Dog obj; //Object creation
+   obj.bark();
+   obj.eat();
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+// Multilevel Inheritance
+
+#include <iostream>
+using namespace std;
+//base class
+class Animal{
+    public:
+        void eat(){
+            cout<<"Animal is Eating";
+        }
+};
+
+//derived class
+class Dog:public Animal{
+    public:
+    void bark(){
+        cout<<"Dog is Barking"<<"\n";
+    }
+};
+
+//Derived
+class Streetdog:public Dog{
+    public:
+    void roam(){
+        cout<<"Street Dog is Roaming"<<"\n";
+    }
+};
+
+int main() {
+   Streetdog obj; //Object creation
+   obj.roam();
+   obj.bark();
+   obj.eat();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//hierarchical Inheritance
+#include <iostream>
+using namespace std;
+
+//Base Class
+class Animal{
+    public:
+        void eat(){
+            cout<<"Eating Food";
+        }
+};
+
+//Derived Class
+class Dog:public Animal{
+    public:
+        void bark(){
+            cout<<"Dog is Barking"<<"\n";
+        }
+};
+
+//Derived Class
+class Cat:public Animal{
+    public:
+        void meow(){
+            cout<<"Cat is Meowing";
+        }
+};
+
+int main() {
+    Dog obj;
+    obj.bark();
+    
+    Cat obj2;
+    obj2.meow();
+    
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Multiple Inheritance
+
+#include <iostream>
+using namespace std;
+
+//Base Class
+class Father{
+    public:
+        void Fathername(){
+            cout<<"Father name is John"<<"\n";
+        }
+};
+
+//Base Class
+class Mother{
+    public:
+        void Mothername(){
+            cout<<"Mother name is Jane"<<"\n";
+        }
+};
+
+//Derived Class
+class Son:public Father,public Mother{
+    public:
+        void Sonname(){
+            cout<<"Son name is Jack"<<"\n";
+        }
+};
+
+int main() {
+    Son obj;
+    obj.Sonname();
+    obj.Mothername();
+    obj.Fathername();
+    
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Hybrid Inheritance
+//Combination of more than one inheritance
+
+#include <iostream>
+using namespace std;
+
+
+class Grandfather{
+    public:
+        void Grandfathername(){
+            cout<<"Grandfather name is William"<<"\n";
+        }
+};
+
+
+class Father:public Grandfather{
+    public:
+        void Fathername(){
+            cout<<"Father name is John"<<"\n";
+        }
+};
+
+
+class Mother{
+    public:
+        void Mothername(){
+            cout<<"Mother name is Jane"<<"\n";
+        }
+};
+
+
+class Son:public Father,public Mother{
+    public:
+        void Sonname(){
+            cout<<"Son name is Jack"<<"\n";
+        }
+};
+
+int main() {
+    Son obj;
+    obj.Sonname();
+    obj.Mothername();
+    obj.Fathername();
+    obj.Grandfathername();
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
