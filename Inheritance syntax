@@ -9,3 +9,16 @@ class Son:public Father,public Mother{
 
 }
 
+//Multi-level
+
+class A{
+
+}
+
+class B:public A {
+
+}
+
+class C:public B{
+
+}
