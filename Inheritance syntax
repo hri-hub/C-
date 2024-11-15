@@ -1,0 +1,11 @@
+//hierarchial inheritance
+class father{
+
+}
+class Mother{
+
+}
+class Son:public Father,public Mother{
+
+}
+
