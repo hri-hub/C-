@@ -1,0 +1,74 @@
+//Encapsulation 
+#include <iostream>
+using namespace std;
+
+class Person{
+    private:
+        int salary;
+        
+    public:
+        void setter(int a){
+            salary=a;
+        }
+        
+        int getter(){
+            return salary;
+        }
+};
+
+int main() {
+    Person obj;
+    obj.setter(15000);
+    cout<<obj.getter();
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//abstraction
+
+#include <iostream>
+using namespace std;
+
+class Person{
+    public:
+        int salary=15000;
+    
+        void annualsalary(int month){
+            cout<<salary*month;
+        }
+};
+
+int main() {
+    Person obj;
+    obj.annualsalary(12);
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Default Constructor and Parameterized Constructor
+
+#include <iostream>
+using namespace std;
+
+class Person{
+    public:
+    int num;
+    
+    //Default Constructor
+    Person(){
+        cout<<"default Constructor"<<"\n";
+    }
+    
+    //Parameterized constructor
+    Person(int a){
+        num=a;
+        cout<<num;
+    }
+
+};
+
+int main() {
+    Person obj;
+    Person obj2(10);
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
