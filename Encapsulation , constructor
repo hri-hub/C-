@@ -72,3 +72,28 @@ int main() {
     return 0;
 }
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//destructor
+
+#include <iostream>
+using namespace std;
+
+class Person{
+    public:
+    int num;
+    
+    //Default Constructor
+    Person(){
+        num=5;
+        cout<<"default Constructor"<<"\n";
+    }
+    
+    ~Person() {
+        cout << "Destructor called" << "\n";
+        cout<<num;   //prints num but allocated memory is deleted
+    }
+};
+
+int main() {
+    Person obj;
+    return 0;
+}
