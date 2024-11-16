@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Demo{
+    public:
+        int data=32;
+        //constructor name in whole class should be same
+        
+        //Default Constructor
+        Demo(){
+            data=40;
+            cout<<data<<"\n";
+        }
+        
+        //Copy Constructor
+        Demo(Demo &a){ //demo in () is classname for object ref ....demo edhuk use pandro na (int a) mari (classname obj) so(demo &a) obj passes to a and statement block la paatha a ngradhu obj dhana adhanala obj.data va thedum ie,40 so 40+10=50
+           
+            data=a.data+10; 
+            cout<<data<<"\n"; //obj.data
+        }   
+};
+
+int main() {
+   Demo obj; //if obj is created for class, constructor is called automatically  and  no paranthesis as no parameters are passed
+   Demo obj2(obj);
+}
