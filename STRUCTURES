@@ -1,0 +1,67 @@
+(STRUCT)
+
+Write a program to compute the inventory for different car models using structures. 
+The structure consists of a 20-character model name, the number of cars of each model, and the price of each car model. Find the following details.
+
+
+1) The total cost of all car models
+2) The total number of cars and total cost for a particular model
+
+
+Input format :
+The first input consists of the number of models N.
+The following lines of input consist of the car model name, number of cars, and price of the car model for N models.
+The last input consists of the car model for which the total cost has to be calculated.
+
+Output format :
+The first line of output consists of the total cost of all car models.
+The second line of output displays the total number of cars and total cost for the particular model, separated by spaces.
+Refer to the sample input and output for the formatting specifications.
+
+Sample test cases :
+Input 1 :
+2
+Skoda
+10
+10000
+Rover
+12
+20000
+Skoda
+
+Output 1 :
+30000
+1 10000
+
+#include <iostream>
+using namespace std;
+
+struct CarModel {
+    string name; 
+    int count;
+    int price;
+};
+
+int main()
+{
+    int N,i,total_cost=0,num=0,cost=0;
+    char model[21];
+    cin>>N;                          //No. of Models
+    struct CarModel x1[N];          // Instead of using struct object each time like x1.model1 x1.model2 we use x1[N]
+    for(i=0;i<N;i++){                //To take name, price ,count as Input from the user
+       cin>> x1[i].name>>x1[i].count>>x1[i].price;
+       total_cost=total_cost+x1[i].price;
+   }
+   
+   cin>> model;                    //name of the model, for searching count and price of car in particular model
+   
+   for(i=0;i<N;i++){              //To print the count and price of particular model which user gave as Input
+       if(model==x1[i].name){
+           num+=1;
+       cost=cost+x1[i].price;
+       }
+   }
+   cout<< total_cost<<endl;
+   cout<< num<< " "<< cost << endl;
+   
+}
