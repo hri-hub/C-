@@ -1,0 +1,16 @@
+(POINTERS)
+//& is used to fetch the address of the value stored in a variable
+//*var, here * is just used to denote pointers....when * is used the cursor is pointed to the value of the address and when printed it gives the value of the variable
+//p=&a stores address of a to p
+Program to find the quotient and remainder of two variables using pointers
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    int *pa=&a; // here value of a is printed when cout<<*pa
+    int *pb=&b; // here value of b is printed when cout<<*pb
+    cout<<*pa / *pb<<" "<<*pa % *pb;
+}
