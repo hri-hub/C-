@@ -1,4 +1,36 @@
 (STRUCT)
+#include <iostream>
+using namespace std;
+
+struct student {
+    string name;
+};
+
+int main()
+{
+   struct student x1,x2; //(or) student x1,x2;
+   x1.name="john"; 
+   cout << x1.name << endl;  //john
+
+   x2.name="joh"; 
+   cout << x2.name << endl;  //joh
+}
+
+/*
+struct student {
+    string name;
+};
+
+int main()
+{
+   struct student x1;
+   x1.name="john"; 
+   cout << x1.name << endl;  //john
+
+   x1.name="joh"; 
+   cout << x1.name << endl;  //john is updated to joh
+}
+*/
 
 Write a program to compute the inventory for different car models using structures. 
 The structure consists of a 20-character model name, the number of cars of each model, and the price of each car model. Find the following details.
