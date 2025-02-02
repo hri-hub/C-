@@ -1,0 +1,5 @@
+Array Type	Is Size Mandatory?	Why?
+Fixed-size array (int arr[5];)                   	✅ Yes   	Memory must be allocated at compile-time
+Array with initialization (int arr[] = {1,2,3};)	❌ No	    Compiler infers size from elements
+Dynamic array (new int[n];)                      	✅ Yes   	Memory is allocated at runtime
+Vector (vector<int> arr;)	                        ❌ No    	Can grow dynamically
